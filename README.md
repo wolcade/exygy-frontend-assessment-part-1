@@ -16,7 +16,7 @@ If you do not anticipate having the space to complete this assessment, please le
 
 We ask that you do not use any outside design system libraries (like Material UI or Bootstrap), but you are free to use more low-level CSS tools if you wish (like Tailwind, Emotion, SASS).
 
-You can share your project with us as a repo on GitHub (@seanmalbert, @ludtkemorgan, @emilyjablonski, @yazeedloonat, @kramduckner, @colinbuyck) or as a zip file in your email chain. We look forward to seeing it!
+You can share your project with us as a repo on GitHub (@seanmalbert, @ludtkemorgan, @emilyjablonski, @yazeedloonat, @kramduckner, @colinbuyck, @adriencyberspace) or as a zip file in your email chain. We look forward to seeing it!
 
 ## Available Scripts
 
