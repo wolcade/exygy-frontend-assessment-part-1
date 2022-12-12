@@ -1,0 +1,11 @@
+.listing-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-right: var(--size-5);
+  margin-bottom: var(--size-5);
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}

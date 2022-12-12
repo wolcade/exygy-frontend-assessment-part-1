@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,900,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900,700|Open+Sans");
 
 :root {
   // Below are some design system variables pulled from the Figma that you may choose to use
@@ -11,10 +11,12 @@
   --color-yellow-500: #fdb81e;
   --color-gray-200: #f7f7f7;
   --color-gray-400: #efefef;
+  --color-gray-450: #dedee0;
   --color-gray-750: #555555;
   --color-gray-850: #333333;
   --color-gray-900: #222222;
 
+  --size-0_2_5: 0.0625rem;
   --size-0_5: 0.125rem;
   --size-1: 0.25rem;
   --size-1_5: 0.375rem;

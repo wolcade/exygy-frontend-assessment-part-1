@@ -1,0 +1,48 @@
+.listing-data {
+  flex: 1;
+
+  .divider {
+    border: var(--size-0_2_5) solid var(--color-gray-750);
+    margin-top: var(--size-4);
+    margin-bottom: var(--size-4);
+  }
+
+  .listing-name {
+    font-family: "Lato";
+    font-style: normal;
+    margin: 0;
+    font-size: var(--size-8);
+    letter-spacing: var(--size-0_2_5);
+    color: var(--color-blue-500);
+  }
+
+  .address-block {
+    font-family: "Lato";
+    font-style: normal;
+    font-size: var(--size-4);
+    letter-spacing: var(--size-0_2_5);
+    color: var(--color-gray-900);
+  }
+
+  .listing-label-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: var(--size-2);
+  }
+
+  .listing-label-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--size-2) var(--size-4);
+    background: var(--color-blue-500);
+    border-radius: var(--size-1);
+    color: var(--color-white);
+    font-family: "Lato";
+    font-style: normal;
+    font-size: var(--size-3_5);
+  }
+}

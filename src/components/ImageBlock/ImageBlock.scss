@@ -21,6 +21,8 @@
   }
 
   .deadline {
+    font-family: "Lato";
+    font-style: normal;
     background-color: var(--color-blue-500);
     color: var(--color-white);
     padding: var(--size-4);
@@ -29,5 +31,31 @@
   }
 
   .label-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: var(--size-3);
+    gap: var(--size-2);
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .image-label-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-yellow-500);
+    border-radius: var(--size-1);
+    padding: var(--size-2) var(--size-4);
+
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--size-3_5);
+    color: var(--color-gray-900);
   }
 }

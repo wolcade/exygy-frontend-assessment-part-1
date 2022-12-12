@@ -1,3 +1,4 @@
+import { ListingCard } from "./components/ListingCard/ListingCard"
 import mockData from "./mock-data.json"
 
 export type Address = {
@@ -29,6 +30,12 @@ export interface Listing {
 
 export const Listings = () => {
   const listingData = mockData as Listing[]
-  // Please use this component as the root of your solution
-  return null
+  return (
+    listingData.length > 0 ?
+      <ul>
+        {listingData.map((listing, index) => (
+          <ListingCard {...listing} key={index} />
+        ))}
+      </ul> : <h1>{"No Listings Available"}</h1>
+  )
 }
