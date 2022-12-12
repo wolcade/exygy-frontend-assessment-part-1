@@ -32,7 +32,7 @@ const ListingDataRow = ({ row }: { row: UnitTableRow }) => {
   )
 }
 
-export const ListingDataTable = ({ unitTableData }: { unitTableData: UnitTableRow[] }) => {
+export const ListingDataTable = ({ unitTableData, listingId }: { unitTableData: UnitTableRow[], listingId: string }) => {
   return (
     <table className="listing-table">
       <thead>
@@ -43,8 +43,8 @@ export const ListingDataTable = ({ unitTableData }: { unitTableData: UnitTableRo
         </tr>
       </thead>
       <tbody>
-        {unitTableData.map((row, index) => {
-          return <ListingDataRow row={row} key={index} />
+        {unitTableData.map((row) => {
+          return <ListingDataRow row={row} key={`${listingId}_${row.type}`} />
         })}
       </tbody>
     </table>

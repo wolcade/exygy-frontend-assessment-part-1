@@ -25,12 +25,14 @@ interface ListingDataHeaderProps {
   listingName: string
   listingAddress: Address
   listingLabels: string[]
+  listingId: string;
 }
 
 const ListingDataHeader = ({
   listingName,
   listingAddress,
   listingLabels,
+  listingId,
 }: ListingDataHeaderProps) => {
   return (
     <div className="listing-data-header">
@@ -38,8 +40,8 @@ const ListingDataHeader = ({
       <AddressBlock listingAddress={listingAddress} />
       {listingLabels.length > 0 && (
         <div className={"listing-label-container"}>
-          {listingLabels.map((label, index) => {
-            return <ListingLabel labelName={label} key={index} />
+          {listingLabels.map((label) => {
+            return <ListingLabel labelName={label} key={`${listingId}_${label}`} />
           })}
         </div>
       )}
@@ -49,13 +51,14 @@ const ListingDataHeader = ({
 
 interface ListingDataSubHeaderProps {
   unitTableData: UnitTableRow[]
+  listingId: string;
 }
 
-const ListingDataSubHeader = ({ unitTableData }: ListingDataSubHeaderProps) => {
+const ListingDataSubHeader = ({ unitTableData, listingId}: ListingDataSubHeaderProps) => {
   return (
     <div className="ListingDataSubHeader">
       <Divider />
-      <ListingDataTable unitTableData={unitTableData} />
+      <ListingDataTable listingId={listingId} unitTableData={unitTableData} />
     </div>
   )
 }
@@ -65,13 +68,14 @@ interface ListingDataProps {
   listingAddress: Address
   listingLabels: string[]
   unitTableData: UnitTableRow[]
+  listingId: string;
 }
 
 export const ListingData = (props: ListingDataProps) => {
   return (
     <div className="listing-data">
       <ListingDataHeader {...props} />
-      <ListingDataSubHeader unitTableData={props.unitTableData} />
+      <ListingDataSubHeader listingId={props.listingId} unitTableData={props.unitTableData} />
     </div>
   )
 }

@@ -11,6 +11,7 @@ export interface ImageBlockProps {
   deadline: string
   imageURL: string
   labels: string[]
+  listingId: string
 }
 
 export const ImageBlock = (props: ImageBlockProps) => {
@@ -18,8 +19,8 @@ export const ImageBlock = (props: ImageBlockProps) => {
     <div className="image-block">
       {props.labels.length > 0 && (
         <div className={"label-container"}>
-          {props.labels.map((label, index) => {
-            return <ImageLabel labelName={label} key={index} />
+          {props.labels.map((label) => {
+            return <ImageLabel labelName={label} key={`${props.listingId}_${label}`} />
           })}
         </div>
       )}

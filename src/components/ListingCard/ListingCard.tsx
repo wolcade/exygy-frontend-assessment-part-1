@@ -10,12 +10,14 @@ export const ListingCard = (listing: Listing) => {
         deadline={listing.deadline}
         imageURL={listing.imageURL}
         labels={listing.imageLabels}
+        listingId={listing.id}
       />
       <ListingData
         listingName={listing.name}
         listingAddress={listing.address}
         listingLabels={listing.listingLabels}
         unitTableData={listing.unitTableData}
+        listingId={listing.id}
       />
     </li>
   )

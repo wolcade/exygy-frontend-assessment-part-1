@@ -33,8 +33,8 @@ export const Listings = () => {
   return (
     listingData.length > 0 ?
       <ul>
-        {listingData.map((listing, index) => (
-          <ListingCard {...listing} key={index} />
+        {listingData.map((listing) => (
+          <ListingCard {...listing} key={listing.id} />
         ))}
       </ul> : <h1>{"No Listings Available"}</h1>
   )
