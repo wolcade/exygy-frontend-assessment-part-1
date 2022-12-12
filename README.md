@@ -1,5 +1,7 @@
 # Exygy Frontend Assessment
 
+Here is my completed assessment! There are still a few things I would have liked to improve given the time, and I look forward to discussing more with you all! Thank you again for the opportunity. This was a fun project!
+
 This project was initialized with [Create React App](https://github.com/facebook/create-react-app) and Typescript.
 
 [Bloom](https://www.exygy.com/housing) is an Exygy product that helps people learn about and apply for affordable housing listings. Taking inspiration from Bloom, this assessment asks you to build a visual directory of housing listings.
